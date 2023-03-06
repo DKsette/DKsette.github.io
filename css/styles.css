@@ -1,0 +1,66 @@
+body {
+    font-family: "Trebuchet MS";
+    color:black;
+    /*margin:0;*/
+    height:100%;
+    max-width: auto;
+    margin: 0 auto; /* pour centrer la page horizontalement */
+}
+.intro{
+
+        padding-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        float:left;
+        margin:1em;
+        background-color: rgba(110, 110, 110, 0.807) ;
+        box-shadow: 5px 5px 5px rgba(45, 44, 44, 0.75);
+  
+}
+#banniere{
+    color: whitesmoke;
+    background-color: #202020;
+    border-bottom:3px solid rgb(255, 255, 255);
+}
+.menu {
+    display: flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+    justify-content: center;/* Alignements des liens dans le menu */
+}
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+}
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */   
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color: #576177;    /* Arrière-plan */
+    color: rgb(0, 0, 0);                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    transition: all 1s ;          /* Ajout des effets de transition */
+}
+.menu a.actif {    
+    background-color: #000 ; 
+    color: #1ABC9C ;
+    border-color: #1ABC9C ;
+}
+.menu a:hover,
+.menu a:hover.actif{
+    background-color: #73bfea;
+    color: #ffffff;
+    border-color: #ffe843;
+}
+#pied {
+    background-color: #333; /* couleur de fond */
+    color: #fff; /* couleur du texte */
+    text-align: center; /* alignement du texte au centre */
+    padding: 10px; /* ajout d'un espace intérieur de 10 pixels */
+    position: absolute; /* positionnement absolu pour fixer le footer en bas de page */
+    bottom: 0; /* alignement en bas de page */
+    width: 100%; /* largeur à 100% pour remplir toute la largeur de la page */
+    border-top: 3px solid white ;
+}
